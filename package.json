@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-bold-systems",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "BOLD Systems (Barcode of Life Data System, University of Guelph) — the global DNA barcode reference library: specimen records with collection locality, institution and taxonomy, the COI/rbcL/matK barcode sequences themselves, and BIN (species-proxy cluster) assignments. Keyless.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d794cb2800cc6d4646f1705662ed070740c13309d2d4ccb407a8f63c7b12c8d6",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-e20e7bd4518b60fcfc91fb49d4394866b7109f8725c3ebe53f5fc3e41a00df88",
+    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
   }
 }

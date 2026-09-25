@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/bold-systems",
   "title": "Bold Systems",
   "description": "BOLD Systems (Barcode of Life Data System, University of Guelph) — the global DNA barcode…",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/bold-systems",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-bold-systems",
