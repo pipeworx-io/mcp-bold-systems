@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-bold-systems",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "BOLD Systems (Barcode of Life Data System, University of Guelph) — the global DNA barcode reference library: specimen records with collection locality, institution and taxonomy, the COI/rbcL/matK barcode sequences themselves, and BIN (species-proxy cluster) assignments. Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-bold-systems": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "bold-systems"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-bold-systems.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/bold-systems",
   "pipeworx": {
-    "sourceHash": "v1-cfb3d0682c9cc629139d7a9ad7b8393b34922682e8cdb3b5e58de14e626c86a7",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "bold-systems",
+    "gatewaySlug": "bold-systems",
+    "sourceHash": "v1-d0667647a15d5cec485246aa96792e53a934d1334c4c05d95cf44e1eb07052d9",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
